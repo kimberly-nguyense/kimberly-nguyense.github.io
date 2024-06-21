@@ -12,49 +12,63 @@
 
 <body>
     <header>
-        <div class=" navbar">
-            <div class="logo">
-                <a href="/">
-                    <img src="/resources/logo.png" alt="Brand Logo" style="height: 50px;">
-                </a>
-            </div>
-            <div class="brand-name">
-                <img src="/resources/brand.png" alt="Paradigm Pet Professionals" style="height: 50px;">
-            </div>
-            <div class="search-bar">
-                <div class="search-bar">
-                    <form action="/search" method="GET">
-                        <input type="text" name="query" placeholder="Search...">
-                        <button type="submit">Search</button>
-                    </form>
+        <div class="container navbar-container">
+            <div class="row navbar sticky-top bg-light bg-gradient">
+                <div class="col-3">
+                    <a href="/">
+                        <div class="col form-inline">
+                            <div class="logo">
+                                <img src="/resources/logo.png" alt="Brand Logo" style="height: 50px;">
+                            </div>
+                            <div class="brand-name">
+                                <img src="/resources/brand.png" alt="Paradigm Pet Professionals"
+                                    style="height: 50px; margin: 0%">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4 search-bar">
+                    <div class="search-bar">
+                        <form action="/search" method="GET">
+                            <input type="text" name="query" placeholder="Search...">
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <nav>
+                        <ul class="navbar-links" style="align-items: center; margin-bottom: 0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Cats.html">Cats</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Dogs.html">Dogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Fish.html">Fish</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/FAQs.html">FAQs</a>
+                            </li>
+                            <li><a href="/index.html#contact-form">
+                                    <button type="button" class="btn btn-primary">Contact Us</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/index.html">Home</a>
-                </li>
-                <li>
-                    <a href="/Cats.html">Cats</a>
-                </li>
-                <li>
-                    <a href="/Dogs.html">Dogs</a>
-                </li>
-                <li>
-                    <a href="/Fish.html">Fish</a>
-                </li>
-                <li>
-                    <a href="/FAQs.html">FAQs</a>
-                </li>
-            </ul>
-        </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="row">
+        <div class="container info-container">
+            <div class="row pet-info">
                 <div class="col">
                     <section class="about-us">
+                        <h1>Paradigm Pet Professionals</h1>
                         <p>Pets are nature's gift to humanity as it has been scientifically proven they increase the
                             longevity of
                             both the owners'
@@ -65,54 +79,131 @@
                             loved ones.
                             Click the links
                             below to learn more about each type of pet.</p>
+                        <p>Looking for basic pet care advice for the most common type of pets? Need additional help
+                            determining which type of pet
+                            is right for you and your family? We will work with you and provide tailored evidence-based
+                            pet
+                            care to ensure lifelong
+                            health and wellness of your new companion.</p>
                     </section>
                 </div>
             </div>
-        </div>
-        <div class="container">
             <section>
-                <div class="row">
-                    <div class="col">
-                        <p>Cats</p>
+                <div class="row" style="width: 50%;">
+                    <div class="col topic" style="display: flex;align-items: center;">
+                        <a href="/Cats.html">Cats</a>
                     </div>
                     <div class="col">
-                        <img src="/resources/cats 1.jpg" alt="Cats">
+                        <img src="/resources/home 1.jpg" alt="Cat Picture">
                     </div>
                     <div class="col">
-                        <img src="/resources/cats 2.jpg" alt="Cats">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <p>Dogs</p>
-                    </div>
-                    <div class="col">
-                        <img src="/resources/dogs 1.jpg" alt="Dogs">
-                    </div>
-                    <div class="col">
-                        <img src="/resources/dogs 2.jpg" alt="Dogs">
+                        <img src="/resources/home 2.jpg" alt="Cat Picture">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <p>Fish</p>
+                <div class="row" style="width: 50%;">
+                    <div class="col topic" style="display: flex;align-items: center;">
+                        <a href="/Dogs.html">Dogs</a>
                     </div>
                     <div class="col">
-                        <img src="/resources/fish 1.jpg" alt="Fish">
+                        <img src="/resources/home 3.jpg" alt="Dog Picture">
                     </div>
                     <div class="col">
-                        <img src="/resources/fish 2.jpg" alt="Fish">
+                        <img src="/resources/home 4.jpg" alt="Dog Picture">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <p>FAQs</p>
+                <div class="row" style="width: 50%;">
+                    <div class="col topic" style="display: flex;align-items: center;">
+                        <a href="/Fish.html">Fish</a>
                     </div>
                     <div class="col">
-                        <img src="/resources/snakes 1.jpg" alt="FAQs">
+                        <img src="/resources/home 5.jpg" alt="Fish Picture">
                     </div>
                     <div class="col">
-                        <img src="/resources/snakes 2.jpg" alt="FAQs">
+                        <img src="/resources/home 6.jpg" alt="Fish Picture">
+                    </div>
+                </div>
+                <div class="row" style="width: 50%;">
+                    <div class="col topic" style="display: flex;align-items: center;">
+                        <a href="/FAQs.html">FAQs</a>
+                    </div>
+                    <div class="col">
+                        <img src="/resources/home 7.jpg" alt="Snake Picture">
+                    </div>
+                    <div class="col">
+                        <img src="/resources/home 8.jpg" alt="Snake Picture">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="row" style="padding: 70px 0 20px 0;">
+                    <div class="col">
+                        <p>
+                            Looking for your new best friend? The following organizations can help you find and adopt
+                            the
+                            perfect companion:
+                        <ul>
+                            <li>General Adoption Resources: https://home-home.org/</li>
+                            <li>ASPCA: https://www.aspca.org/</li>
+                            <li>Fish Rescue: https://www.sterlingshelter.org/humane-society/koi-fish-rescue/</li>
+                            <li>Snake Rescue: https://savethesnakes.org/snakerescuecall/</li>
+                            <li>Bird Rescue: https://ftlob.rescuegroups.org/</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="contact-form" class="row">
+                    <div class="col-12">
+                        <p>We are also happy to help you navigate the adoption process! We will guide you through each
+                            step in the process from
+                            determining which type of pet is best suited for your family and home environment, to
+                            completing the necessary
+                            paperwork, to bringing your new loved one home. Please fill out our contact form to request
+                            a consultation. We will
+                            contact you within 48 hours to schedule a consultation. All fields are required.</p>
+                    </div>
+                    <div class="col-12" style="margin: auto; max-width:800px; padding-bottom: 70px;">
+                        <h2 style="padding:50px 0 20px 0; text-align: center;">Contact Form</h2>
+                        <div class="row">
+                            <div class="col-6">
+                                <form>
+                                    <h3>Your Info</h3>
+                                    <div class="mb-3">
+                                        <label for="inputName" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="inputName">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputPhone" class="form-label">Phone Number</label>
+                                        <input type="text" class="form-control" id="inputPhone">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputEmail" class="form-label">Email</label>
+                                        <input type="text" class="form-control" id="inputEmail">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputTimezone" class="form-label">Timezone</label>
+                                        <input type="text" class="form-control" id="inputTimezone">
+                                    </div>
+                            </div>
+                            <div class="col-6">
+                                <h3>Your Pet's Info</h3>
+                                <div class="mb-3">
+                                    <label for="inputPetName" class="form-label">Pet's Name</label>
+                                    <input type="text" class="form-control" id="inputPetName">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="inputPetType" class="form-label">Pet Type</label>
+                                    <input type="text" class="form-control" id="inputPetType">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="inputPetAge" class="form-label">Pet's Age</label>
+                                    <input type="text" class="form-control" id="inputPetAge">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -120,56 +211,70 @@
     </main>
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col">
+            <div class="row ">
+                <div class="col-5 navbar-brand">
                     <div class="navbar">
-                        <div class="logo">
+                        <div class="row">
                             <a href="/">
-                                <img src="./resources/logo.png" alt="Brand Logo" style="height: 50px;">
+                                <div class="col form-inline">
+                                    <div class="logo"><img src="/resources/logo.png" alt="Brand Logo"
+                                            style="height: 50px;">
+
+                                    </div>
+                                    <div class="brand-name">
+                                        <img src="/resources/brand.png" alt="Paradigm Pet Professionals"
+                                            style="height: 50px; margin: 0%">
+                                    </div>
+                                </div>
                             </a>
-                        </div>
-                        <div class="brand-name">
-                            <img src="./resources/brand.png" alt="Paradigm Pet Professionals" style="height: 50px;">
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-7">
                     <nav>
-                        <ul>
-                            <li>
-                                <a href="/Cats.html">Feeding Cats</a>
+                        <div class="row">
+                            <div class="col">
+                                <p class="topic">
+                                    <a href="/Cats.html">Feeding Cats</a>
+                                </p>
                                 <ul>
                                     <li><a href="/Cats.html#0-4-weeks">0 - 4 Weeks</a></li>
                                     <li><a href="/Cats.html#4-weeks-1-year">4 Weeks - 1 Year</a></li>
                                     <li><a href="/Cats.html#1-year-7-years">1 Year - 7 Years</a></li>
                                     <li><a href="/Cats.html#7-plus-years">7+ Years</a></li>
                                 </ul>
-                            </li>
-                            <li>
-                                <a href="/Dogs.html">Dog Maintenance</a>
+                            </div>
+                            <div class="col">
+                                <p class="topic">
+                                    <a href="/Dogs.html">Dog Maintenance</a>
+                                </p>
                                 <ul>
                                     <li><a href="/Dogs.html#Diet-and-exercise">Diet & Exercise</a></li>
                                     <li><a href="/Dogs.html#Grooming-and-handling">Grooming & Handling</a></li>
                                     <li><a href="/Dogs.html#Vaccinations-and-medications">Vaccinations & Medications</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li>
-                                <a href="/Fish.html">Fish Water</a>
+                            </div>
+                            <div class="col">
+                                <p class="topic">
+                                    <a href="/Fish.html">Fish Water</a>
+                                </p>
                                 <ul>
                                     <li><a href="/Fish.html#Freshwater">Freshwater</a></li>
                                     <li><a href="/Fish.html#Saltwater">Saltwater</a></li>
                                 </ul>
-                            </li>
-                            <li>
-                                <a href="/FAQs.html">FAQs</a>
+                            </div>
+                            <div class="col">
+                                <p class="topic">
+                                    <a href="/FAQs.html">FAQs</a>
+                                </p>
                                 <ul>
                                     <li><a href="/FAQs.html#Fleas">Fleas</a></li>
                                     <li><a href="/FAQs.html#Birds-life-expectancy">Birds' Life Expectancy</a></li>
                                     <li><a href="/FAQs.html#Feeding-snakes">Feeding Snakes</a></li>
                                 </ul>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </nav>
                 </div>
             </div>
